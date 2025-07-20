@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import Card from "../components/Card";
 import { Globe } from "../components/globe";
-import { Frameworks } from "../components/FrameWorks";
+import { Frameworks } from "../components/Frameworks";
 import ReadBlogsButton from "../components/CopyEmailButton";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
