@@ -13,12 +13,12 @@ import Loader from "../components/Loader";
 const About = () => {
   const grid2Container = useRef();
   return (
-    <section className="c-space section-spacing" id="about">
+    <section className="c-space section-spacing overflow-x-hidden" id="about">
       <h2 className="text-heading">About Me</h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
         {/* Grid 1 */}
-        <div className="flex items-end grid-default-color grid-1">
-       <div className="absolute top-[-35vh] right-[-30vh] translate-y-0 w-[700px] h-[700px] md:w-[700px] md:h-[700px] overflow-visible">
+        <div className="flex items-end grid-default-color grid-1 min-h-[28rem] sm:min-h-[32rem] md:min-h-[18rem] relative">
+       <div className="absolute top-[-35vh] right-[-30vh] w-[400px] sm:w-[500px] md:w-[700px] h-[400px] sm:h-[500px] md:h-[700px]">
   <Canvas camera={{ position: [0, 0, 2.5] }}>
     <Suspense fallback={<Loader />}>
       <Float>
@@ -28,7 +28,7 @@ const About = () => {
   </Canvas>
 </div>
 
-          <div className="z-10">
+          <div className="z-10 max-w-full sm:max-w-[90%]">
             <p className="headtext">Hi, I'm Unnati Srivastava</p>
             <p className="subtext">
               I am a dedicated and results-driven full-stack developer passionate about building efficient, scalable, and user-centric web applications. Proficient in front-end technologies like React.js, and well-versed in back-end development with Node.js, MongoDB, Redis, WebRTC, I thrive on crafting seamless solutions that bridge design and functionality. With a strong focus on problem-solving and innovation, my goal is to create impactful digital experiences that empower businesses and delight users.
